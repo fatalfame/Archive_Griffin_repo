@@ -11,6 +11,5 @@ for file_names in files:
     reader = csv.DictReader(input_file)
     for row in reader:
         print row
-        for value in row.iteritems():
-            writer.writerow({'Season': row['Season'], 'W-L%': row['W-L%'], 'PTS': row['PTS'], 'SOS': row['SOS']})
+        writer.writerow({'Season': row['Season'], 'W-L%': row['W-L%'], 'PTS': row['PTS'], 'SOS': row['SOS']})
 
