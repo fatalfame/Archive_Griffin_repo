@@ -6,23 +6,36 @@ players = '../Code/ncaa_machine_learning/outputs/nba_players.csv'
 input_file = open(players, 'rb')
 reader = csv.DictReader(input_file)
 
-features = []
+points = []
+minutes = []
 targets = []
+stars = []
 x_2015 = []
+features = []
 for row in reader:
     if '2015-16' not in row['Season']:
-        features.append(float(row['Points']))
-        features.append(float(row['Minutes']))
-        targets.append(bool(int(row['All Star'])))
+        points.append(float(row['Points']))
+        minutes.append(float(row['Minutes']))
+        stars.append(bool(int(row['All Star'])))
     else:
         x_2015.append(float(row['Points']))
         x_2015.append(float(row['Minutes']))
-print features
-print targets
-print x_2015
+
+x = zip(points, minutes, stars)
+feat = []
+tar = []
+for data in x:
+    feat.append(data[:-1])
+    tar.append(data[-1])
+
+print 'features:', feat
+print 'targets:', tar
+
+a = np.array(feat)
+
 classifier = SVC()
-classifier.fit(features, targets)
-print 'prediction:', classifier.predict(x_2015)
+classifier.fit(feat, tar)
+print classifier.predict(a)
 
 
 # some_data = [(1, 2, 3), (4, 5, 6)]
