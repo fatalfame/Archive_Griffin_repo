@@ -1,41 +1,43 @@
 import numpy as np
-from sklearn.svm import SVC
+from sklearn.svm import *
 import csv as csv
 
-players = '../Code/ncaa_machine_learning/outputs/nba_players.csv'
+players = '../Code/ncaa_machine_learning/outputs/nba_players2.csv'
 input_file = open(players, 'rb')
 reader = csv.DictReader(input_file)
 
-points = []
-minutes = []
 targets = []
-stars = []
-x_2015 = []
 features = []
+x_2015 = []
 for row in reader:
     if '2015-16' not in row['Season']:
-        points.append(float(row['Points']))
-        minutes.append(float(row['Minutes']))
-        stars.append(bool(int(row['All Star'])))
+        features.append([float(row['Points']),
+        float(row['Rebounds']),
+        float(row['Blocks']),
+        float(row['Fouls']),
+        float(row['Steals']),
+        float(row['Turnovers']),
+        float(row['FTA'])])
+        targets.append(bool(int(row['All Star'])))
     else:
-        x_2015.append(float(row['Points']))
-        x_2015.append(float(row['Minutes']))
+        x_2015.append([row['Player'],
+        float(row['Points']),
+        float(row['Rebounds']),
+        float(row['Blocks']),
+        float(row['Fouls']),
+        float(row['Steals']),
+        float(row['Turnovers']),
+        float(row['FTA'])])
 
-x = zip(points, minutes, stars)
-feat = []
-tar = []
-for data in x:
-    feat.append(data[:-1])
-    tar.append(data[-1])
+print 'features:', features
+print 'targets:', targets
 
-print 'features:', feat
-print 'targets:', tar
-
-a = np.array(feat)
-
-classifier = SVC()
-classifier.fit(feat, tar)
-print classifier.predict(a)
+classifier = SVR()
+classifier.fit(features, targets)
+predictions = classifier.predict([i[1:] for i in x_2015])
+final_result = zip(predictions, x_2015)
+for row in sorted(final_result, reverse=True):
+    print row
 
 
 # some_data = [(1, 2, 3), (4, 5, 6)]
