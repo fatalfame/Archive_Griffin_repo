@@ -1,6 +1,11 @@
 import numpy as np
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis, QuadraticDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import *
 import csv as csv
+from sklearn.ensemble import *
+from sklearn.tree import *
+from sklearn.neighbors import *
 
 players = '../Code/ncaa_machine_learning/outputs/nba_players2.csv'
 input_file = open(players, 'rb')
@@ -13,8 +18,11 @@ for row in reader:
     if '2015-16' not in row['Season']:
         features.append([float(row['Points']),
         float(row['Rebounds']),
+        float(row['Assists']),
+        float(row['Minutes']),
         float(row['Blocks']),
         float(row['Fouls']),
+        float(row['FGA']),
         float(row['Steals']),
         float(row['Turnovers']),
         float(row['FTA'])])
@@ -23,8 +31,11 @@ for row in reader:
         x_2015.append([row['Player'],
         float(row['Points']),
         float(row['Rebounds']),
+        float(row['Assists']),
+        float(row['Minutes']),
         float(row['Blocks']),
         float(row['Fouls']),
+        float(row['FGA']),
         float(row['Steals']),
         float(row['Turnovers']),
         float(row['FTA'])])
@@ -32,7 +43,7 @@ for row in reader:
 print 'features:', features
 print 'targets:', targets
 
-classifier = SVR()
+classifier = AdaBoostClassifier()
 classifier.fit(features, targets)
 predictions = classifier.predict([i[1:] for i in x_2015])
 final_result = zip(predictions, x_2015)
