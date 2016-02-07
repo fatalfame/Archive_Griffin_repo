@@ -4,8 +4,9 @@ import time
 import csv
 
 
-fieldnames = ['Player', 'Season', 'Age', 'Points', 'Rebounds', 'Assists', 'Minutes']
-writer = csv.DictWriter(open('..//Code/ncaa_machine_learning/outputs/nba_players.csv', 'wb'),
+fieldnames = ['Player', 'Season', 'Age', 'Points', 'Rebounds', 'Assists', 'Minutes', 'FTA', 'Blocks', 'Fouls', '3p%',
+              'FGA', '2p%', 'FG', 'ft%', 'Steals', 'Turnovers']
+writer = csv.DictWriter(open('..//Code/ncaa_machine_learning/outputs/nba_players2.csv', 'wb'),
                         fieldnames=fieldnames)
 writer.writeheader()
 
@@ -48,14 +49,22 @@ def main(driver):
             rebs = row.xpath('.//td[20]')[0].text
             asst = row.xpath('.//td[21]')[0].text
             pts = row.xpath('.//td[26]')[0].text
+            fg = row.xpath('.//td[10]')[0].text
+            fga = row.xpath('.//td[11]')[0].text
+            fta = row.xpath('.//td[17]')[0].text
+            steals = row.xpath('.//td[22]')[0].text
+            blk = row.xpath('.//td[23]')[0].text
+            tov = row.xpath('.//td[24]')[0].text
+            pf = row.xpath('.//td[25]')[0].text
+            twos = row.xpath('.//td[28]')[0].text
+            three = row.xpath('.//td[29]')[0].text
+            free = row.xpath('.//td[31]')[0].text
             writer.writerow({'Player': player, 'Season': season, 'Age': age, 'Points': pts, 'Rebounds': rebs,
-                             'Assists': asst, 'Minutes': mins})
-            # print player+'/', season+'/', age+'/', pts+'/', rebs+'/', asst+'/', mins
+                             'Assists': asst, 'Minutes': mins, 'FG': fg, 'FGA': fga, 'FTA': fta, 'Steals': steals,
+                             'Blocks': blk, 'Turnovers': tov, 'Fouls': pf, '2p%': twos, '3p%': three, 'ft%': free})
         for n in xrange(0, 2):
-            time.sleep(5)
+            time.sleep(3)
         driver.find_element_by_xpath(NEXT).click()
-
-
 
 
 if __name__ == '__main__':
