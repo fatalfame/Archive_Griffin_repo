@@ -7,7 +7,7 @@ from sklearn.ensemble import *
 from sklearn.tree import *
 from sklearn.neighbors import *
 
-players = '../Code/ncaa_machine_learning/outputs/nba_players2.csv'
+players = '../Code/nba_machine_learning/outputs/all_players.csv'
 input_file = open(players, 'rb')
 reader = csv.DictReader(input_file)
 
@@ -40,10 +40,19 @@ for row in reader:
         float(row['Turnovers']),
         float(row['FTA'])])
 
+
+def convert(value):
+    if value:
+        try:
+            x = float(value)
+        except ValueError:
+            x = None
+        return x
+
 print 'features:', features
 print 'targets:', targets
 
-classifier = AdaBoostClassifier()
+classifier = DecisionTreeClassifier()
 classifier.fit(features, targets)
 predictions = classifier.predict([i[1:] for i in x_2015])
 final_result = zip(predictions, x_2015)
