@@ -1,11 +1,15 @@
 import numpy as np
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis, QuadraticDiscriminantAnalysis
+from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import *
 import csv as csv
 from sklearn.ensemble import *
 from sklearn.tree import *
 from sklearn.neighbors import *
+from sklearn.feature_selection import RFE
+from sklearn import *
+
 
 players = '../Code/nba_machine_learning/outputs/all_players.csv'
 input_file = open(players, 'rb')
@@ -52,7 +56,7 @@ def convert(value):
 print 'features:', features
 print 'targets:', targets
 
-classifier = DecisionTreeClassifier()
+classifier = AdaBoostClassifier()
 classifier.fit(features, targets)
 predictions = classifier.predict([i[1:] for i in x_2015])
 final_result = zip(predictions, x_2015)
