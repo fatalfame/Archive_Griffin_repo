@@ -6,7 +6,7 @@ import csv
 
 fieldnames = ['Player', 'Season', 'Age', 'Points', 'Rebounds', 'Assists', 'Minutes', 'FTA', 'Blocks', 'Fouls', '3p%',
               'FGA', '2p%', 'FG', 'ft%', 'Steals', 'Turnovers']
-writer = csv.DictWriter(open('..//Code/ncaa_machine_learning/outputs/nba_players2.csv', 'wb'),
+writer = csv.DictWriter(open('..//Code/nba_machine_learning/outputs/2015-16_roster.csv', 'wb'),
                         fieldnames=fieldnames)
 writer.writeheader()
 
@@ -17,6 +17,8 @@ driver = webdriver.Firefox()
 START_URL = 'http://www.basketball-reference.com/play-index/psl_finder.cgi'
 PER_GAME = ".//*[@id='psl_finder']/table/tbody/tr[2]/td[1]/div[1]/div/div[2]/input"
 ACTIVE = ".//*[@id='psl_finder']/table/tbody/tr[2]/td[3]/div[2]/div/input[1]"
+FROM = ".//*[@id='year_min']/option[71]"
+TO = ".//*[@id='year_min']/option[70]"
 # STAR = ".//*[@id='as_single']/div/div/input[1]"
 OPTION = ".//*[@id='order_by']/option[1]"
 SORT = ".//*[@id='psl_finder']/table/tbody/tr[2]/td[4]/div[3]/div[3]/input"
@@ -30,6 +32,8 @@ def main(driver):
     driver.get(START_URL)
     driver.find_element_by_xpath(PER_GAME).click()
     driver.find_element_by_xpath(ACTIVE).click()
+    driver.find_element_by_xpath(FROM).click()
+    driver.find_element_by_xpath(TO).click()
     # driver.find_element_by_xpath(STAR).click()
     driver.find_element_by_xpath(OPTION).click()
     driver.find_element_by_xpath(SORT).click()
