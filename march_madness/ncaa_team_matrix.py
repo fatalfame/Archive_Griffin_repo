@@ -18,6 +18,7 @@ targets = []
 features = []
 x_2015 = []
 for row in reader:
+    x = row['OFF']
     print row['School']
     print row['Season']
     for k in row['W']:
@@ -29,12 +30,15 @@ for row in reader:
     for k in row['Percent']:
         row['Percent'] = float(row['Percent'])
     print '%', type(row['Percent'])
-    for k in row['SOS']:
-        row['SOS'] = float(row['SOS'])
+    if row['SOS']:
+        for k in row['SOS']:
+            row['SOS'] = float(row['SOS'])
+    else:
+        row['SOS'] = None
     print 'SOS', type(row['SOS'])
-    for k in row['OFF']:
-        row['OFF'] = float(row['OFF'])
-    print 'OFF', type(row['OFF'])
+    # for k in row['OFF']:
+    #     row['OFF'] = float(row['OFF'])
+    # print 'OFF', type(row['OFF'])
     for k in row['DEF']:
         row['DEF'] = float(row['DEF'])
     print 'DEF', type(row['DEF'])
@@ -63,6 +67,16 @@ for row in reader:
         row['DEF'],
         row['AP High'],
         row['AP Final']])
+
+
+def convert(val):
+    if val:
+        for k in val:
+            val = float(val)
+            return val
+    else:
+        val = None
+        return val
 
 # print 'features:', features
 # print 'targets:', targets
