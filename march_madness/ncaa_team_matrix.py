@@ -63,9 +63,8 @@ for row in reader:
 
 def convert(val):
     if val:
-        for k in val:
-            val = float(val)
-            return val
+        val = float(val)
+        return val
     else:
         val = None
         return val
