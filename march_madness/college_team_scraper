@@ -4,7 +4,7 @@ import csv
 
 
 fieldnames = ['School', 'Season', 'Conf', 'W', 'L', 'Percent', 'SOS', 'OFF', 'DEF', 'AP High', 'AP Final', 'NCAA']
-writer = csv.DictWriter(open('..//Code/personal/march_madness/team_stats.csv', 'wb'),
+writer = csv.DictWriter(open('..//Code/Griffin_repo/march_madness/team_stats.csv', 'wb'),
                         fieldnames=fieldnames)
 writer.writeheader()
 
@@ -40,7 +40,7 @@ def main():
                             'Lost Second Round', 'Lost Third Round', ''):
                     ncaa = int(0)
                 if ncaa in ('Lost National Final', 'Lost National SemiFinal', 'Lost Regional Final (Final Four)',
-                            'Won National Final'):
+                            'Won National Final', 'Lost National Semifinal'):
                     ncaa = int(1)
                 writer.writerow({'School': school_name, 'Season': season, 'Conf': conf, 'W': wins, 'L': loss,
                                  'Percent': percent, 'SOS': sos, 'OFF': off, 'DEF': defense, 'AP High': ap_high,
@@ -51,14 +51,19 @@ def convert(val):
     if val:
         x = val[0]
         return x
-    return None
+    else:
+        val = float(0)
+    return val
+
 
 def value(val):
     if val:
         x = val[0]
         y = float(x)
         return y
-    return None
+    else:
+        val = float(0)
+    return val
 
 
 if __name__ == '__main__':
