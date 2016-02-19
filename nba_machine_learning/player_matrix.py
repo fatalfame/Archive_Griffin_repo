@@ -11,7 +11,7 @@ from sklearn.feature_selection import RFE
 from sklearn import *
 
 
-players = '../Code/nba_machine_learning/outputs/all_players.csv'
+players = '../Code/Griffin_repo/nba_machine_learning/outputs/all_players.csv'
 input_file = open(players, 'rb')
 reader = csv.DictReader(input_file)
 
@@ -56,7 +56,7 @@ def convert(value):
 print 'features:', features
 print 'targets:', targets
 
-classifier = AdaBoostClassifier()
+classifier = RandomForestRegressor()
 classifier.fit(features, targets)
 predictions = classifier.predict([i[1:] for i in x_2015])
 final_result = zip(predictions, x_2015)
