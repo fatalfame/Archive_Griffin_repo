@@ -1,0 +1,5 @@
+SurveyName,SurveyID,SurveySubmissionID,StartDTS,QuestionID,QuestionTXT,QResponseVAL,ServiceName
+Product Survey - MultiCare,XSVh1Y,2ce70d62e5e52f186e0f6e041648b071,2017-03-21 21:37:21,opinionscale_jxa3,"Overall, how satisfied are you with the application?",7,
+Product Survey - MultiCare,XSVh1Y,2ce70d62e5e52f186e0f6e041648b071,2017-03-21 21:37:21,opinionscale_BONX,Please indicate to what extent you agree with the statement below.<br /><br />The application saves me time compared to my old method of data collection/analysis.,9,
+Product Survey - MultiCare,XSVh1Y,2ce70d62e5e52f186e0f6e041648b071,2017-03-21 21:37:21,opinionscale_M40n,Please indicate to what extent you agree with the statement below.<br /><br />I still prefer to use my old method of data collection/analysis instead of the application.,1,
+Product Survey - MultiCare,XSVh1Y,2ce70d62e5e52f186e0f6e041648b071,2017-03-21 21:37:21,dropdown_CmFY,What best describes your department within the organization?,Operations,

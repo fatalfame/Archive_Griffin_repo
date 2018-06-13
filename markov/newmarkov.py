@@ -1,7 +1,7 @@
 import markovify
 
 # Get raw text as string.
-with open("..//Griffin_repo/markov/vanbible4.txt") as f:
+with open("..//markov/vanbible4.txt") as f:
     text = f.read()
 
 roth_list = ['babe', 'woo', 'cool', 'sexy', 'devil', 'mama', '!', 'lady', 'woman', 'yeah', 'don\'t',
@@ -30,4 +30,4 @@ text_model = markovify.Text(text)
 # Print three randomly-generated sentences of no more than 140 characters
 for i in range(100):
     if (buzzword in (text_model.make_short_sentence(125)) for buzzword in roth_list):
-        print'======',(text_model.make_short_sentence(125))
+        print((text_model.make_short_sentence(125)))

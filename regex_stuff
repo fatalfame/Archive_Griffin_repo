@@ -1,0 +1,11 @@
+SELECT TOP 100 APB.AppointmentDTS, APB.StatusCD, APB.WhenArrivedDTS, APB.WhenScheduledDTS, APB.SchedulingDepartmentCD, APB.TimeNBR, APB.AppointmentDurationNBR, 
+PB.PatientID, PB.PatientNM,
+VB.VisitTypeLongNM, CAD.ReasonForVisitTXT, DV.SchedulingDepartmentNM, APB.CancellationCommentTXT
+  FROM 
+  [CentricityPB].[Appointment].[AppointmentDetailBASE] CAD
+  JOIN [CentricityPB].[Appointment].[AppointmentBASE] APB on CAD.PatientID = APB.PatientID
+  JOIN [CentricityPB].[Patient].[PatientBASE] PB on CAD.PatientID = PB.PatientID
+  JOIN [CentricityPB].[Appointment].[VisitTypeBASE] VB on APB.VisitTypeNBR = VB.VisitTypeNBR
+--  JOIN [CentricityPB].[Reference].[LocationBASE] LB on APB.LocationNBR = LB.LocationNBR
+  JOIN [CentricityPB].[Reference].SchedulingDepartmentBASE DV on APB.VisitTypeNBR = DV.SchedulingDepartmentNBR
+  ORDER by CAD.AppointmentDTS desc

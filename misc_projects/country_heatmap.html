@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps - pygmaps </title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+<script type="text/javascript">
+	function initialize() {
+		var centerlatlng = new google.maps.LatLng(0.000000, 0.000000);
+		var myOptions = {
+			zoom: 2,
+			center: centerlatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+		var latlng = new google.maps.LatLng(40.376895, -111.795765);
+		var img = new google.maps.MarkerImage('C:\Users\griffin.hoopes\AppData\Local\Continuum\Anaconda2\lib\site-packages\gmplot\markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "no implementation",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(38.845861, -121.485410);
+		var img = new google.maps.MarkerImage('C:\Users\griffin.hoopes\AppData\Local\Continuum\Anaconda2\lib\site-packages\gmplot\markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "no implementation",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(47.751074, -120.740139);
+		var img = new google.maps.MarkerImage('C:\Users\griffin.hoopes\AppData\Local\Continuum\Anaconda2\lib\site-packages\gmplot\markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "no implementation",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(40.530778, -112.298280);
+		var img = new google.maps.MarkerImage('C:\Users\griffin.hoopes\AppData\Local\Continuum\Anaconda2\lib\site-packages\gmplot\markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "no implementation",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(40.667725, -111.938826);
+		var img = new google.maps.MarkerImage('C:\Users\griffin.hoopes\AppData\Local\Continuum\Anaconda2\lib\site-packages\gmplot\markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "no implementation",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+var heatmap_points = [
+new google.maps.LatLng(40.376895, -111.795765),
+new google.maps.LatLng(38.845861, -121.485410),
+new google.maps.LatLng(47.751074, -120.740139),
+new google.maps.LatLng(40.530778, -112.298280),
+new google.maps.LatLng(40.667725, -111.938826),
+];
+
+var pointArray = new google.maps.MVCArray(heatmap_points);
+var heatmap;
+heatmap = new google.maps.visualization.HeatmapLayer({
+
+data: pointArray
+});
+heatmap.setMap(map);
+heatmap.set('threshold', 10);
+heatmap.set('radius', 10);
+heatmap.set('opacity', 0.600000);
+heatmap.set('dissipating', true);
+	}
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+	<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>

@@ -2,13 +2,16 @@ import random;
 import string
 import sys;
 import re;
+# from gtts import gTTS;
+# import os;
+# import time;
 
 
 stopword = "\n"
 stopsentence = (".", "!")  # Cause a "new sentence" if found at the end of a word
 sentencesep  = "\n"  #String used to seperate sentences
-quote_file = '..//Griffin_repo/markov/vanbible3.txt'
-input_file = open(quote_file, 'rb')
+quote_file = '..//markov/vanbible3.txt'
+input_file = open(quote_file, 'r')
 
 
 # GENERATE TABLE
@@ -31,7 +34,7 @@ table.setdefault((w1, w2), []).append(stopword)
 
 
 # GENERATE SENTENCE OUTPUT
-maxsentences  = 500
+maxsentences = 500
 w1 = stopword
 w2 = stopword
 sentencecount = 0
@@ -43,7 +46,7 @@ roth_list = set(['babe', 'woo', 'cool', 'sexy', 'mama', '!', 'yeah', 'hey', 'uh'
                  'i think', 'i got', 'ooo', 'oooh', 'bout', 'drug', 'car',
                  'hamburger', 'tattoo', 'gorgeous', 'beauty', 'window',
                  'phone', 'crazy', 'fun', 'ass', 'summer', 'jimmy', 'aah',
-                 'mmm', 'hammerhead', 'shark', 'beer',
+                 'mmm', 'hammerhead', 'shark', 'beer', 'sweat', 'cookin',
                  'buddy', 'amsterdam', 'cabo', 'beach', 'tan', 'squeeze', 'slide', 'telephone', 'cream',
                  'doctor', 'shoo', 'soda', 'insane', 'wild', 'kiss', 'taste', 'lipstick', 'dyke', 'daddy',
                  'breathin', 'rhythm', 'lovin', 'piss', 'pants', 'gun', 'hips', 'whiskey','alimony', 'lover',
@@ -52,18 +55,19 @@ bible_list = set(['god', 'holy', 'peace', 'war', 'angry', 'unto', 'thy', 'saith'
                   'sea', 'fire', 'hell', 'cast', 'down', 'earth', 'heaven', 'angel', 'angels', 'satan', 'devil',
                   'thee', 'thou', 'gnashing', 'teeth', 'rain', 'rained', 'fowl', 'king', 'jehovah', 'worship', 'idols',
                   'beast', 'deceiver', 'temptation', 'fool', 'lame', 'tongues', 'flood', 'believe', 'faith', 'holy',
-                  'wicked', 'burn', 'tempt', 'temptation', 'sick', 'meek', 'steadfast', 'pray', 'creature','kill',
-                  'spirit', 'faith', 'shall', 'ye', 'israel', 'mankind', 'unclean', 'unclean', 'unholy', 'flesh',
-                 'man', 'son', 'hath', 'king', 'people', 'house', 'before', 'children', 'against', 'land', 'shalt',
-                'behold', 'therefore', 'because', 'hast', 'sons', 'david', 'city', 'moses', 'heart', 'steadfast',
-                 'forth', 'neither', 'judah', 'jerusalem', 'according', 'took', 'whom', 'offering', 'temple',
-                 'lord', 'eat', 'heard', 'called', 'egypt', 'lamb', 'flock', 'shepherd', 'servant', 'fasting',
-                 'prosper', 'riches', 'gold', 'silver',
+                  'wicked', 'burn', 'tempt', 'temptation', 'sick', 'meek', 'steadfast', 'pray', 'creature', 'kill',
+                  'spirit', 'faith', 'shall', 'ye', 'israel', 'mankind', 'unclean', 'unholy', 'flesh',
+                  'man', 'son', 'hath', 'king', 'people', 'house', 'before', 'children', 'against', 'land', 'shalt',
+                  'behold', 'therefore', 'because', 'hast', 'sons', 'david', 'city', 'moses', 'heart', 'steadfast',
+                  'forth', 'neither', 'judah', 'jerusalem', 'according', 'took', 'whom', 'offering', 'temple',
+                  'lord', 'eat', 'heard', 'called', 'egypt', 'lamb', 'flock', 'shepherd', 'servant', 'fasting',
+                  'prosper', 'riches', 'gold', 'silver',
                   'woe', 'prophet', 'horse', 'commandments', 'amen', 'blessed', 'begat',
                   'almighty', 'wine', 'cursed', 'verily', 'sacrifice', 'atonement', 'pure', 'prophet', 'disciple'])
 convo_list = set(['said', 'saieth', 'sayest', 'spoke', 'speaking', 'tell', 'asked', 'ask', 'say', 'commanded',
                   'shout', 'command', 'wrote', 'taught', 'teach', 'saying', 'prophecy', 'teaching', 'written',
-                  'testify', 'testified', 'pray', 'wrote', 'voice', 'shouted', 'shouting', 'asketh'])
+                  'testify', 'testified', 'pray', 'wrote', 'voice', 'shouted', 'shouting', 'asketh', 'proclaim',
+                  'whipser', 'whispered'])
 
 
 while sentencecount < maxsentences:
@@ -78,11 +82,15 @@ while sentencecount < maxsentences:
         no_punct = [x.strip(string.punctuation) for x in lcase_words]
         tokens = set(no_punct)
         if roth_list.intersection(tokens) and bible_list.intersection(tokens) and convo_list.intersection(tokens):
-            if len(fixed_tweet) > 30 and len(fixed_tweet) < 130:
-                # print roth_list.intersection(tokens)
-                # print bible_list.intersection(tokens)
-                # print convo_list.intersection(tokens)
-                print fixed_tweet
+            if len(fixed_tweet) > 30 and len(fixed_tweet) < 150:
+                print(roth_list.intersection(tokens))
+                print(bible_list.intersection(tokens))
+                print(convo_list.intersection(tokens))
+                print(fixed_tweet)
+                # myobj = gTTS(text=fixed_tweet, lang='en', slow=False)
+                # myobj.save("test.mp3")
+                # os.system("test.mp3")
+                # time.sleep(10)
                 sentencecount += 1
     else:
         sentence.append(new_word)

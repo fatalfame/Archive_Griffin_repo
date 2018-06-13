@@ -1,4 +1,5 @@
 from healthcareai import DevelopSupervisedModel
+from healthcareai import DeploySupervisedModel
 import pandas as pd
 import time
 
@@ -8,15 +9,15 @@ def main():
     t0 = time.time()
 
     # CSV snippet for reading data into dataframe
-    df = pd.read_csv('..//healthcareai/tests/fixtures/HCPyDiabetesClinical.csv',
-                     na_values=['None'])
+    df = pd.read_csv('..//healthcareai/tests/fixtures/LOS2.csv', na_values=['None'])
 
     # SQL snippet for reading data into dataframe
     # import pyodbc
-    # cnxn = pyodbc.connect("""SERVER=localhost;
-    #                         DRIVER={SQL Server Native Client 11.0};
-    #                         Trusted_Connection=yes;
-    #                         autocommit=True""")
+    cnxn = pyodbc.connect("""SERVER=HCS-DEV0004;
+                            DRIVER={SQL Server Native Client 11.0};
+                            Trusted_Connection=yes;
+                            autocommit=False;
+                            database=Epic""")
     #
     # df = pd.read_sql(
     #     sql="""SELECT *
@@ -29,25 +30,26 @@ def main():
     df.replace(['None'], [None], inplace=True)
 
     # Look at data that's been pulled in
-    print(df.head())
-    print(df.dtypes)
+    # print(df.head())
+    # print(df.dtypes)
 
     # Drop columns that won't help machine learning
-    df.drop(['PatientID', 'InTestWindowFLG'], axis=1, inplace=True)
+    df.drop(['LOS', 'EncounterTypeCD'], axis=1, inplace=True)
 
     # Step 1: compare two models
     o = DevelopSupervisedModel(modeltype='classification',
                                df=df,
-                               predictedcol='ThirtyDayReadmitFLG',
+                               predictedcol='LongLOS',
+                               # windowcol='Predict',
                                # graincol='PatientEncounterID',  #OPTIONAL
                                impute=True,
                                debug=False)
 
     # Run the linear model
-    o.linear(cores=5)
+    o.linear(cores=2)
 
     # Run the random forest model
-    o.random_forest(cores=100,
+    o.random_forest(cores=2, trees=200,
                     tune=False)
 
     # Look at the RF feature importance rankings
@@ -57,13 +59,12 @@ def main():
     o.plot_roc(debug=False,
                save=False)
 
-    df = pd.read_csv('..//healthcareai/tests/fixtures/HCPyDiabetesClinical.csv',
-                     na_values=['None'])
+    # df = pd.read_csv('..//healthcareai/tests/fixtures/LOS.csv', na_values=['None'])
 
-    df.drop(['PatientID'], axis=1, inplace=True)
-
+    # df.drop(['LOS'], axis=1, inplace=True)
 
     print('\nTime:\n', time.time() - t0)
+
 
 if __name__ == "__main__":
     main()

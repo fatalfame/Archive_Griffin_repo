@@ -13,7 +13,7 @@ def main():
     page_rows = page_root.xpath(".//*[@id='listAlbum']/a")
     for thing in page_rows:
         try:
-            link_list.append('www.azlyrics.com'+thing.xpath(".//@href")[0][2:])
+            link_list.append('https://www.azlyrics.com'+thing.xpath(".//@href")[0][2:])
         except IndexError:
             continue
     for link in link_list:
@@ -24,7 +24,7 @@ def main():
             song = row.xpath(".//text()")
             for line in set(song):
                 if '[' not in line:
-                    print line
+                    print(line)
     driver.quit()
 
 if __name__ == '__main__':

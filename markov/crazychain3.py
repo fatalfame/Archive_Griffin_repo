@@ -24,7 +24,7 @@ def main():
             song = row.xpath(".//text()")
             for line in set(song):
                 if '[' not in line and len(line) > 5:
-                    print line
+                    print(line)
     driver.quit()
 
 if __name__ == '__main__':

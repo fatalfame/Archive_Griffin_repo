@@ -21,7 +21,7 @@ def main():
     maxsentences = 100
     sentencecount = 0
     while sentencecount < maxsentences:
-        fname = '..//Griffin_repo/markov/vanbible.txt'
+        fname = '..//markov/vanbible.txt'
         with open(fname, "rt") as f:
             text = f.read()
         words = text.split()
