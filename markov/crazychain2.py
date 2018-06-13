@@ -6,7 +6,7 @@ import time
 def main():
     driver = webdriver.Firefox()
     driver.implicitly_wait(10)
-    counter = range(1, 214)
+    counter = range(1, 10)
     for i in counter:
         driver.get('http://www.values.com/inspirational-quotes?page=' + str(i))
         page_root = lxml.html.fromstring(driver.page_source)
@@ -16,7 +16,7 @@ def main():
             for word in set(song):
                 length = word.count(' ')
                 if length < 20:
-                    print song
+                    print(song)
     driver.quit()
 
 if __name__ == '__main__':

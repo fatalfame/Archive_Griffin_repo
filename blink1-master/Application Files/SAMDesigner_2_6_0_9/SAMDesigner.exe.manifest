@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SAMDesigner.exe" version="2.6.0.9" publicKeyToken="e99707dc63721e10" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\Images\HcLogoWithBackground.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SAMDesigner" version="2.6.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SAMDesigner.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AurelienRibon.Ui.SyntaxHighlightBox.dll" size="36864">
+      <assemblyIdentity name="AurelienRibon.Ui.SyntaxHighlightBox" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>28uYf2+rgpJm9CqrdLIBH37N57Ce1mABoY95Fpzq5zc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Catalyst.Common.dll" size="88576">
+      <assemblyIdentity name="Catalyst.Common" version="2.6.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2F9Zin0xGhHl32EXRp0d7D737e3wb/RRPGZwXZq65C0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Catalyst.Data.dll" size="316928">
+      <assemblyIdentity name="Catalyst.Data" version="2.6.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>G2/n6Q9p8A1bA+Ctd2Cb6QzLOaaEh19/QvTQ3CisTfA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Catalyst.SAM.Designer.Services.dll" size="105984">
+      <assemblyIdentity name="Catalyst.SAM.Designer.Services" version="2.6.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dwEmLlSCh5BN0Ljj5vUc2mzC6Sau5gQMuX5wDtLVurU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="1116760">
+      <assemblyIdentity name="EntityFramework" version="5.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PoNKnbJ6KecCojr5W66/YqltD4tkc9jUL2AUPZPv3LU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FeatureToggle.dll" size="12800">
+      <assemblyIdentity name="FeatureToggle" version="2.0.5280.21273" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>X1To/4GdiMzb2sbTMOjiUqhf25dDcYYLDPte+BkNnLM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FeatureToggle.Core.dll" size="6656">
+      <assemblyIdentity name="FeatureToggle.Core" version="2.0.5280.21280" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>h8EaaTHKOXTbaJ7XJ+kMbJVmofTV2Lov8hctjeBwx9E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GalaSoft.MvvmLight.Extras.WPF45.dll" size="24576">
+      <assemblyIdentity name="GalaSoft.MvvmLight.Extras.WPF45" version="4.1.27.22784" publicKeyToken="0E27B6F8BE9B2EF7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bOijjTjMnKzlpUQKt1Q8sLIgw3G82TvgbsVc1Q+QArQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GalaSoft.MvvmLight.WPF45.dll" size="28160">
+      <assemblyIdentity name="GalaSoft.MvvmLight.WPF45" version="4.1.27.22784" publicKeyToken="EABBF6A5F5AF5004" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y/tdBh1rTKPfvTpDk8jboLOIJPKvsw0z/MMNHJfW9qI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Practices.EnterpriseLibrary.Common.dll" size="211632">
+      <assemblyIdentity name="Microsoft.Practices.EnterpriseLibrary.Common" version="6.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>11C2YSY678vpYZQtFcLcUH2mNhdIqOZUJpYydLV0Tuc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Practices.EnterpriseLibrary.Logging.dll" size="415408">
+      <assemblyIdentity name="Microsoft.Practices.EnterpriseLibrary.Logging" version="6.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rRjyghPrxoWk5vOM6lSfhd6i5RAl9NCPZy784Sj/EF8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Practices.ServiceLocation.dll" size="29760">
+      <assemblyIdentity name="Microsoft.Practices.ServiceLocation" version="1.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eee+a+dQmhpSY/ApLxRipXdEp8UsTaZHXHClBU0Iwyc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Practices.Unity.dll" size="144048">
+      <assemblyIdentity name="Microsoft.Practices.Unity" version="3.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>in1SgrMPhbka9Ie3Z+WDW+vl1B2XXzAGHaS2PBS8rpc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Practices.Unity.Configuration.dll" size="87728">
+      <assemblyIdentity name="Microsoft.Practices.Unity.Configuration" version="3.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>n7d3R6PpOrfXw9i3AnUwbYdaewU+yI6KCjH94faKJ9A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.TransactSql.ScriptDom.dll" size="2886336">
+      <assemblyIdentity name="Microsoft.SqlServer.TransactSql.ScriptDom" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ry6bdzU0kwpwmeWYaB0JY5yALeM4/6lucOTqu8NBz4A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Windows.Shell.dll" size="167808">
+      <assemblyIdentity name="Microsoft.Windows.Shell" version="3.5.41019.1" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tuCzOAzUVHPzbT/YIrhVkbwvfQoUdTVdw16Xj0ElIsQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="430592">
+      <assemblyIdentity name="Newtonsoft.Json" version="4.5.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>u53unmMjK4CyzIDxYzpvxB7ZFZqvOeNj7VBa2/vso08=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RibbonControlsLibrary.dll" size="802168">
+      <assemblyIdentity name="RibbonControlsLibrary" version="4.0.0.11019" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Nw4zYZ0B7xL5KCu+7W82ScmCQgOJfH2Wi6+a2IxL9jk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAMDesigner.exe" size="1158992">
+      <assemblyIdentity name="SAMDesigner" version="2.6.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rxNX1uf7d0Qtvp3wmjI0yUGbX5G3i+hz5/Cxd9dMJ1c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Windows.Interactivity.dll" size="55880">
+      <assemblyIdentity name="System.Windows.Interactivity" version="4.5.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>M7AGuwOLBusi8Zwdwfi6GpJkeq91F6sqqZzFPd0zbF0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.Toolkit.dll" size="949760">
+      <assemblyIdentity name="Xceed.Wpf.Toolkit" version="2.1.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1giZhvc+uF9TFLQUPOFnmDX+l+IglyVfkaptKI4VvFI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Resources\Images\HcLogoWithBackground.ico" size="53694">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vh0SxXA4y+0/2V/6WaSX1alAUdF1aVTtAJVtDkvikyo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SAMDesigner.exe.config" size="5147">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lVcxbkS3FIJ5ATVsAZ7d4Fr1EnFD/+Fww9bacOUeOcg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <fileAssociation extension=".sam" description="Subject Area Mart Metadata" progid="SAMD" defaultIcon="Resources\Images\HcLogoWithBackground.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=&quot;HEALTHCARE QUALITY CATALYST, LLC&quot;, O=&quot;HEALTHCARE QUALITY CATALYST, LLC&quot;, L=Salt Lake City, S=Utah, C=US" issuerKeyHash="40c2bd278ecc348330a233d7fb6cb3f0b42c80ce" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9sZogKAjHMYjfLwtEyCBO1le5FtDzwwZbECNy63oz2U=</DigestValue></Reference></SignedInfo><SignatureValue>eBA+aTa9Qx5oG+q4lBJStzFqUNjSbB833iJl0s3jtKzClBlJTJ652m6Sht01wyCYnijzKrbvIgz8WZVZcYyOwdM1N9ugF337agVlvAagcsu/TFCsQnG7Kc+AQZNGYiK2uBTScd3h2xDdn5ZkXK+2oXxbuGtf/ElBbvl9LtD9c/LO+B3jTwBR88jYJ7TK7dL4xy56MQQ9rwtywQHTs0MRY3QuVgoXWBYIozBB6lI2PZI2LPYweK6DwvDyMPwApap1W5+PQ141h8eElzyRFZjFy37rP5/FvU3T6VUA2yZHngMkjx7oXt7aCo9v75A0sScYvNzv1ODEKgwWwXdz4r9rrw==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>swNstk0PKSUCAcIZGJh6SY1pvTAAsaLk/sF9Y0ufT8cpsD/p4tFt30E5N61Uaehfr6ZdlmMEptDYJLpXBYS2RPFLQJTKsslyF0vyTspy2tz7776StSwalPZPMn3xWT9030MO27yJfC6x4OtxSqbaalS50BYfSN95jNkIpmjimqp4OmsaYdjIuRFtqNim3pKz/el1LM9xOZvBTXAUOCeg2QAn97QUOGtZfcPLQNCRWxhA4efu0R/mtr7RpdzxxcQYkgUfW6CUb7lM+k5sQ32QfSO0ywuxuoHc9ZuLdJwE4ExqIdWEUvilpqUv+oZ2SHZIu5u2QhoxcLR6nISGhNSTpQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="65cfe8adcb8d406c190ccf435be45e593b8120132dbc7c23c61c23a08068c6f6" Description="" Url=""><as:assemblyIdentity name="SAMDesigner.exe" version="2.6.0.9" publicKeyToken="e99707dc63721e10" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN="HEALTHCARE QUALITY CATALYST, LLC", O="HEALTHCARE QUALITY CATALYST, LLC", L=Salt Lake City, S=Utah, C=US</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Bz2s1icgrJ6MDmLx5Jsy8H4fCfC5CBLkvIIdEZZASJg=</DigestValue></Reference></SignedInfo><SignatureValue>lJhkhLZ2PQOLpHQ40a6Pk3g3G+VbrIWYlQrLVtkku58Lp7ubPwLitmDY3bDPFvZ7OTU7oGlHBsHNNJZmxAQOoyKoEYrI63v/7Jc1OyM/2f2dF8uPRqvvOCJBH0IqkHmIc8JHakXp0cNF7JcExboKdLEZREACot+P48K1quy+vZA1hrPZvQQTa3iBDnqp8ID1maliLR4dIso4rnOuKz88b8XeZvREzlb76CYQDG09NZV5tIpzz50efNBeMygA3wBtN6MDJp1QIdfcOAg1p0AQ742TWbL+e2gOnD7Ufzw+mZaoQS6f0IsiV6G4p88U/1Jx9kN04/W+i48IO5iuXq/qRQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>swNstk0PKSUCAcIZGJh6SY1pvTAAsaLk/sF9Y0ufT8cpsD/p4tFt30E5N61Uaehfr6ZdlmMEptDYJLpXBYS2RPFLQJTKsslyF0vyTspy2tz7776StSwalPZPMn3xWT9030MO27yJfC6x4OtxSqbaalS50BYfSN95jNkIpmjimqp4OmsaYdjIuRFtqNim3pKz/el1LM9xOZvBTXAUOCeg2QAn97QUOGtZfcPLQNCRWxhA4efu0R/mtr7RpdzxxcQYkgUfW6CUb7lM+k5sQ32QfSO0ywuxuoHc9ZuLdJwE4ExqIdWEUvilpqUv+oZ2SHZIu5u2QhoxcLR6nISGhNSTpQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFPzCCBCegAwIBAgIHJ+Egqn8K3jANBgkqhkiG9w0BAQsFADCBtDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0FyaXpvbmExEzARBgNVBAcTClNjb3R0c2RhbGUxGjAYBgNVBAoTEUdvRGFkZHkuY29tLCBJbmMuMS0wKwYDVQQLEyRodHRwOi8vY2VydHMuZ29kYWRkeS5jb20vcmVwb3NpdG9yeS8xMzAxBgNVBAMTKkdvIERhZGR5IFNlY3VyZSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkgLSBHMjAeFw0xNDExMTIyMDAwMjBaFw0xNzEyMjMxODE2MDZaMIGLMQswCQYDVQQGEwJVUzENMAsGA1UECBMEVXRhaDEXMBUGA1UEBxMOU2FsdCBMYWtlIENpdHkxKTAnBgNVBAoTIEhFQUxUSENBUkUgUVVBTElUWSBDQVRBTFlTVCwgTExDMSkwJwYDVQQDEyBIRUFMVEhDQVJFIFFVQUxJVFkgQ0FUQUxZU1QsIExMQzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALMDbLZNDyklAgHCGRiYekmNab0wALGi5P7BfWNLn0/HKbA/6eLRbd9BOTetVGnoX6+mXZZjBKbQ2CS6VwWEtkTxS0CUyrLJchdL8k7Kctrc++++krUsGpT2TzJ98Vk/dN9DDtu8iXwuseDrcUqm2mpUudAWH0jfeYzZCKZo4pqqeDprGmHYyLkRbajYpt6Ss/3pdSzPcTmbwU1wFDgnoNkAJ/e0FDhrWX3Dy0DQkVsYQOHn7tEf5ra+0aXc8cXEGJIFH1uglG+5TPpObEN9kH0jtMsLsbqB3PWbi3ScBOBMaiHVhFL4paalL/qGdkh2SLubtkIaMXC0epyEhoTUk6UCAwEAAaOCAXswggF3MAwGA1UdEwEB/wQCMAAwEwYDVR0lBAwwCgYIKwYBBQUHAwMwDgYDVR0PAQH/BAQDAgeAMDUGA1UdHwQuMCwwKqAooCaGJGh0dHA6Ly9jcmwuZ29kYWRkeS5jb20vZ2RpZzJzNS0wLmNybDBTBgNVHSAETDBKMEgGC2CGSAGG/W0BBxcCMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVwb3NpdG9yeS8wdgYIKwYBBQUHAQEEajBoMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5nb2RhZGR5LmNvbS8wQAYIKwYBBQUHMAKGNGh0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVwb3NpdG9yeS9nZGlnMi5jcnQwHwYDVR0jBBgwFoAUQMK9J47MNIMwojPX+2yz8LQsgM4wHQYDVR0OBBYEFAyvT9rh1RbsGdQkN6f0K2gQHoCwMA0GCSqGSIb3DQEBCwUAA4IBAQA7YoLXd5ZGfrLomnDM9TDv88EWWVFvNZ0WeuCbI9WF6a6yZJD8Gy4vNsIk5/ArHBSFTDc94gAevjYsBlS3viwAWZhNDca4Uae2lrckQOsr/tW1PbGxHozP3jfIxVLzqZ5p3UszZYRfErTpa0bQ5mnwChSeU9aRnx8HOHftcelXuWqZbKdoXIdn+cKWIISoNqAg1vwlYe67bKwQGuZcMQYAOao+qwfhb6pwDwtpT0B4kaPMP+FMUmMo8s4zlautqKMsyTQu/Xk1ZVriSQGJ6jfEg6TEhT0AwFgqfgkDnXIKyc+lBMh2ewRXuhOzPH0dUqGAdsrInpSDKs1/Y1MJwOCy</X509Certificate><X509Certificate>MIIE0DCCA7igAwIBAgIBBzANBgkqhkiG9w0BAQsFADCBgzELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0FyaXpvbmExEzARBgNVBAcTClNjb3R0c2RhbGUxGjAYBgNVBAoTEUdvRGFkZHkuY29tLCBJbmMuMTEwLwYDVQQDEyhHbyBEYWRkeSBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eSAtIEcyMB4XDTExMDUwMzA3MDAwMFoXDTMxMDUwMzA3MDAwMFowgbQxCzAJBgNVBAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMRowGAYDVQQKExFHb0RhZGR5LmNvbSwgSW5jLjEtMCsGA1UECxMkaHR0cDovL2NlcnRzLmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvMTMwMQYDVQQDEypHbyBEYWRkeSBTZWN1cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC54MsQ1K92vdSTYuswZLiBCGzDBNliF44v/z5lz4/OYuY8UhzaFkVLVat4a2ODYpDOD2lsmcgaFItMzEUz6ojcnqOvK/6AYZ15V8TPLvQ/MDxdR/yaFrzDN5ZBUY4RS1T4KL7QjL7wMDge87Am+GZHY23ecSZHjzhHU9FGHbTj3ADqRay9vHHZqm8A29vNMDp5T19MR/gd71vCxJ1gO7GyQ5HYpDNO6rPWJ0+tJYqlxvTV0KaudAVkV4i1RFXULSo6Pvi4vekyCgKUZMQWOlDxSq7neTOvDCAHf+jfBDnCaQJsY1L6d8EbyHSHyLmTGFBUNUtpTrw700kuH9zB0lL7AgMBAAGjggEaMIIBFjAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQUQMK9J47MNIMwojPX+2yz8LQsgM4wHwYDVR0jBBgwFoAUOpqFBxBnKLbv9r0FQW4gwZTaD94wNAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5nb2RhZGR5LmNvbS8wNQYDVR0fBC4wLDAqoCigJoYkaHR0cDovL2NybC5nb2RhZGR5LmNvbS9nZHJvb3QtZzIuY3JsMEYGA1UdIAQ/MD0wOwYEVR0gADAzMDEGCCsGAQUFBwIBFiVodHRwczovL2NlcnRzLmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvMA0GCSqGSIb3DQEBCwUAA4IBAQAIfmyTEMg4uJapkEv/oV9PBO9sPpyIBslQj6Zz91cxG7685C/b+LrTW+C05+Z5Yg4MotdqY3MxtfWoSKQ7CC2iXZDXtHwlTxFWMMS2RJ17LJ3lXubvDGGqv+QqG+6EnriDfcFDzkSnE3ANkR/0yBOtg2DZ2HKocyQetawiDsoXiWJYRBuriSUBAA/NxBti21G00w9RKpv0vHP8ds42pM3Z2Czqrpv1KrKQ0U11GIo/ikGQI31bS/6kA1ibRrLDYGCD+H1QQc7CoZDDu+8CL9IVVO5EFdkKrqeKM+2xLXY2JtwE65/3YR8V3Idv7kaWKK2hJn0KCacuBKONvPi8BDAB</X509Certificate><X509Certificate>MIIEfTCCA2WgAwIBAgIDG+cVMA0GCSqGSIb3DQEBCwUAMGMxCzAJBgNVBAYTAlVTMSEwHwYDVQQKExhUaGUgR28gRGFkZHkgR3JvdXAsIEluYy4xMTAvBgNVBAsTKEdvIERhZGR5IENsYXNzIDIgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTQwMTAxMDcwMDAwWhcNMzEwNTMwMDcwMDAwWjCBgzELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0FyaXpvbmExEzARBgNVBAcTClNjb3R0c2RhbGUxGjAYBgNVBAoTEUdvRGFkZHkuY29tLCBJbmMuMTEwLwYDVQQDEyhHbyBEYWRkeSBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eSAtIEcyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv3FiCPH6WTT3G8kYo/eASVjpIoMTpsUgQwE7hPHmhUmfJ+r2hBtOoLTbcJjHMgGxBT4HTu70+k8vWTAi56sZVmvigAf88xZ1gDlRe+X5NbZ0TqmNghPktj+pA4P6or6KFWp/3gvDthkUBcrqw6gElDtGfDIN8wBmIsiNaW02jBEYt9OyHGC0OPoCjM7T3UYH3go+6118yHz7sCtTpJJiaVElBWEaRIGMLKlDliPfrDqBmg4pxRyp6V0etp6eMAo5zvGIgPtLXcwy7IViQyU0AlYnAZG0O3AqP26x6JyIAX2f1PnbU21gnb8s51iruF9G/M7EGwM8CetJMVxpRrPgRwIDAQABo4IBFzCCARMwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFDqahQcQZyi27/a9BUFuIMGU2g/eMB8GA1UdIwQYMBaAFNLEsNKR1EwRcbNhyz2h/t2oatTjMDQGCCsGAQUFBwEBBCgwJjAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZ29kYWRkeS5jb20vMDIGA1UdHwQrMCkwJ6AloCOGIWh0dHA6Ly9jcmwuZ29kYWRkeS5jb20vZ2Ryb290LmNybDBGBgNVHSAEPzA9MDsGBFUdIAAwMzAxBggrBgEFBQcCARYlaHR0cHM6Ly9jZXJ0cy5nb2RhZGR5LmNvbS9yZXBvc2l0b3J5LzANBgkqhkiG9w0BAQsFAAOCAQEAWQtTvZKGEacke+1bMc8dH2xwxbhuvk679r6XUOEwf7ooXGKUwuN+M/f7QnaF25UcjCJYdQkMiGVnOQoWCcWgOJekxSOTP7QYpgEGRJHjp2kntFolfzq3Ms3dhP8qOCkzpN1nsoX+oYggHFCJyNwq9kIDN0zmiN/VryTyscPfzLXs4Jlet0lUIDyUGAzHHFIYSaRt4bNYC8nY7NmuHDKOKHAN4v6mF56ED71XcLNa6R+ghlO773z/aQvgSMO3kwvIClTErF0UZzdsyqUvMQg3qm5vjLyb4lddJIGvl5echK1srDdMZvNhkREg5L4wn3qkKQmw4TRfZHcYQFHfjDCmrw==</X509Certificate></X509Data></KeyInfo><Object><as:Timestamp>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</as:Timestamp></Object></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

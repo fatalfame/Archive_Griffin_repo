@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="tests" name="Doctests in marktest3" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ca4f4d0-3f67-4de7-a4d2-59439bbd28fb" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ml_stuff/hawaii.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ml_stuff/hawaiinml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ml_stuff/newtest.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ml_stuff/test4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nba_machine_learning/outputs/2017-182_roster.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/geckodriver.exe" afterPath="$PROJECT_DIR$/nba_machine_learning/geckodriver.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/outputs/all_star_roster2.csv" afterPath="$PROJECT_DIR$/nba_machine_learning/outputs/all_star_roster2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthcareai/Lengthofstay.py" afterPath="$PROJECT_DIR$/healthcareai/Lengthofstay.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthcareai/healthstats.py" afterPath="$PROJECT_DIR$/healthcareai/healthstats.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthcareai/tests/fixtures/LOS.csv" afterPath="$PROJECT_DIR$/healthcareai/tests/fixtures/LOS.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/march_madness/college_team_scraper.py" afterPath="$PROJECT_DIR$/march_madness/college_team_scraper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/march_madness/ncaa_team_matrix.py" afterPath="$PROJECT_DIR$/march_madness/ncaa_team_matrix.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/march_madness/team_stats.csv" afterPath="$PROJECT_DIR$/march_madness/team_stats.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markov/crazychain.py" afterPath="$PROJECT_DIR$/markov/crazychain.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markov/crazychain2.py" afterPath="$PROJECT_DIR$/markov/crazychain2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markov/crazychain3.py" afterPath="$PROJECT_DIR$/markov/crazychain3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markov/marktest.py" afterPath="$PROJECT_DIR$/markov/marktest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markov/marktest2.py" afterPath="$PROJECT_DIR$/markov/marktest2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markov/newmarkov.py" afterPath="$PROJECT_DIR$/markov/newmarkov.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml_stuff/Data Exploration.ipynb" afterPath="$PROJECT_DIR$/ml_stuff/Data Exploration.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml_stuff/ggplotdemo.py" afterPath="$PROJECT_DIR$/ml_stuff/ggplotdemo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml_stuff/pandas + scikit-learn Integration Demo.ipynb" afterPath="$PROJECT_DIR$/ml_stuff/pandas + scikit-learn Integration Demo.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml_stuff/pandatrain.py" afterPath="$PROJECT_DIR$/ml_stuff/pandatrain.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml_stuff/requirements.txt" afterPath="$PROJECT_DIR$/ml_stuff/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/allstar.dot" afterPath="$PROJECT_DIR$/nba_machine_learning/allstar.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/ggplotnba.py" afterPath="$PROJECT_DIR$/nba_machine_learning/ggplotnba.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/nba.py" afterPath="$PROJECT_DIR$/nba_machine_learning/nba.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/outputs/2016-17_roster.csv" afterPath="$PROJECT_DIR$/nba_machine_learning/outputs/2016-17_roster.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/outputs/2017-18_roster.csv" afterPath="$PROJECT_DIR$/nba_machine_learning/outputs/2017-18_roster.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/outputs/all_players.csv" afterPath="$PROJECT_DIR$/nba_machine_learning/outputs/all_players.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/pandanba2.py" afterPath="$PROJECT_DIR$/nba_machine_learning/pandanba2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/player_matrix.py" afterPath="$PROJECT_DIR$/nba_machine_learning/player_matrix.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_machine_learning/seaborndemo.py" afterPath="$PROJECT_DIR$/nba_machine_learning/seaborndemo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_stats/efficiency.py" afterPath="$PROJECT_DIR$/nba_stats/efficiency.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_stats/efficiency_GH.py" afterPath="$PROJECT_DIR$/nba_stats/efficiency_GH.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_stats/player_ratings.csv" afterPath="$PROJECT_DIR$/nba_stats/player_ratings.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_stats/team_ratings.csv" afterPath="$PROJECT_DIR$/nba_stats/team_ratings.csv" />
+    </list>
+    <ignored path="Griffin_repo.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Griffin_repo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="mottos.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markov/mottos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tweet_generator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tweet-generator-master/tweet_generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lander.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/openai/lander.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="130" column="15" lean-forward="true" selection-start-line="130" selection-start-column="15" selection-end-line="130" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>creighton</find>
+      <find>baylor</find>
+      <find>kentucky</find>
+      <find>florida state</find>
+      <find>write_to_file</find>
+      <find>filename</find>
+      <find>print</find>
+      <find>get_sur</find>
+      <find>request_to_type</find>
+      <find>date</find>
+      <find>service</find>
+      <find>dtype</find>
+      <find>age</find>
+      <find>importance</find>
+      <find>linear</find>
+      <find>readmis</find>
+      <find>extendedlosflg</find>
+      <find>ss</find>
+      <find>plt.show()</find>
+      <find>titanic</find>
+      <find>extended</find>
+      <find>category</find>
+      <find>x_2016</find>
+      <find>convert(</find>
+      <find>float(row</find>
+      <find>Stormy</find>
+      <find>More than 200</find>
+      <find>The Obama White House</find>
+      <find>cnnbrk</find>
+      <find>weights_path</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>object</replace>
+      <replace>x_2017</replace>
+      <replace>float(</replace>
+      <replace>convert(row</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\griffin.hoopes\Griffin_repo</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/healthcareai/utmb/cancelpredictor.py" />
+        <option value="$PROJECT_DIR$/healthcareai/queens/predictionscore.py" />
+        <option value="$PROJECT_DIR$/healthcareai/utmb/surgerycancelpredictionscore.py" />
+        <option value="$PROJECT_DIR$/healthcareai/utmb/data_profiler.py" />
+        <option value="$PROJECT_DIR$/healthcareai/utmb/instagram.py" />
+        <option value="$PROJECT_DIR$/healthcareai/Length2.py" />
+        <option value="$PROJECT_DIR$/bokeh_demo.py" />
+        <option value="$PROJECT_DIR$/nba_machine_learning/player_matrix.py" />
+        <option value="$PROJECT_DIR$/machine_learning/titanic_ml.py" />
+        <option value="$PROJECT_DIR$/healthcareai/utmb/new_predictionscore.py" />
+        <option value="$PROJECT_DIR$/depechedad/dad_quotes/main.py" />
+        <option value="$PROJECT_DIR$/healthcareai/utmb/Length3.py" />
+        <option value="$PROJECT_DIR$/healthcareai/utmb/new_utmb_los.py" />
+        <option value="$PROJECT_DIR$/healthcareai/ukhs_los.py" />
+        <option value="$PROJECT_DIR$/nba_machine_learning/nba.py" />
+        <option value="$PROJECT_DIR$/nba_machine_learning/all_star_classifier - 2.py" />
+        <option value="$PROJECT_DIR$/nba_machine_learning/nba_healthcareai.py" />
+        <option value="$PROJECT_DIR$/nba_machine_learning/all_star_classifier.py" />
+        <option value="$PROJECT_DIR$/nba_machine_learning/ggplotnba.py" />
+        <option value="$PROJECT_DIR$/nba_machine_learning/seaborndemo.py" />
+        <option value="$PROJECT_DIR$/fileextractor.py" />
+        <option value="$PROJECT_DIR$/nba_machine_learning/pandanba2.py" />
+        <option value="$PROJECT_DIR$/march_madness/college_team_scraper.py" />
+        <option value="$PROJECT_DIR$/march_madness/ncaa_team_matrix.py" />
+        <option value="$PROJECT_DIR$/march_madness/ncaa_pandas.py" />
+        <option value="$PROJECT_DIR$/twittertest.py" />
+        <option value="$PROJECT_DIR$/markov/crazychain3.py" />
+        <option value="$PROJECT_DIR$/markov/crazychain.py" />
+        <option value="$PROJECT_DIR$/markov/vanhalensentiment.py" />
+        <option value="$PROJECT_DIR$/markov/vanscraper.py" />
+        <option value="$USER_HOME$/Downloads/FNTRCU3IXGFOHW8.py" />
+        <option value="$PROJECT_DIR$/timer.py" />
+        <option value="$PROJECT_DIR$/march_madness/ncaa_pandas_matrix.py" />
+        <option value="$PROJECT_DIR$/healthcareai/aitest.py" />
+        <option value="$PROJECT_DIR$/markov/marktest2.py" />
+        <option value="$PROJECT_DIR$/markov/marktest3.py" />
+        <option value="$PROJECT_DIR$/alltweets.py" />
+        <option value="$PROJECT_DIR$/markov/vanmarkovtest.py" />
+        <option value="$PROJECT_DIR$/markov/marktest.py" />
+        <option value="$PROJECT_DIR$/markov/texttospeech.py" />
+        <option value="$PROJECT_DIR$/markov/mottos.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/textgenrnn/textgenrnn.py" />
+        <option value="$PROJECT_DIR$/markov/extract_probs.py" />
+        <option value="$PROJECT_DIR$/markov/generate_sequence.py" />
+        <option value="$PROJECT_DIR$/markov/newmarkov.py" />
+        <option value="$PROJECT_DIR$/markov/depechemarkov.py" />
+        <option value="$PROJECT_DIR$/music-generation-master/convert_directory.py" />
+        <option value="$PROJECT_DIR$/GRUV-master/data_utils/parse_files.py" />
+        <option value="$PROJECT_DIR$/markov/crazychain2.py" />
+        <option value="$PROJECT_DIR$/tweet-generator-master/tweet_generator.py" />
+        <option value="$PROJECT_DIR$/openai/lander.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="2582" />
+    <option name="height" value="1402" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Griffin_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Griffin_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Griffin_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Griffin_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/healthstats.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="link_list&#9;null&#9;null&#10;basketball-reference&#9;null&#9;null" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\griffin.hoopes\Griffin_repo\healthcareai\utmb" />
+      <recent name="C:\Users\griffin.hoopes\Griffin_repo\weather" />
+      <recent name="C:\Users\griffin.hoopes\Griffin_repo\markov" />
+      <recent name="C:\Users\griffin.hoopes\Griffin_repo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\griffin.hoopes\Griffin_repo\healthcareai" />
+      <recent name="C:\Users\griffin.hoopes\Griffin_repo" />
+      <recent name="C:\Users\griffin.hoopes\Griffin_repo\markov" />
+      <recent name="C:\Users\griffin.hoopes\Griffin_repo\march_madness" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.lander">
+    <configuration default="false" name="tweet_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tweet-generator-master" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tweet-generator-master/tweet_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="crazychain2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/markov" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/markov/crazychain2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="crazychain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/markov" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/markov/crazychain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="mottos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/markov" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/markov/mottos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="lander" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/openai" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/openai/lander.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Griffin_repo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.tweet_generator" />
+      <item index="1" class="java.lang.String" itemvalue="Python.crazychain2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.crazychain" />
+      <item index="3" class="java.lang.String" itemvalue="Python.mottos" />
+      <item index="4" class="java.lang.String" itemvalue="Python.lander" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.lander" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tweet_generator" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mottos" />
+        <item index="3" class="java.lang.String" itemvalue="Python.crazychain" />
+        <item index="4" class="java.lang.String" itemvalue="Python.crazychain2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ca4f4d0-3f67-4de7-a4d2-59439bbd28fb" name="Default" comment="" />
+      <created>1456985141102</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1456985141102</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 10h 21m 35s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 10h 45m 19s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 10h 45m 43s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 10h 47m 00s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 10h 47m 21s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 10h 48m 34s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 11h 03m 12s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 11h 03m 36s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 11h 03m 51s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_marktest3 - 2018.05.08 at 11h 04m 17s.xml">
+      <configuration name="Doctests in marktest3" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="2582" height="1402" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20507812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42880794" sideWeight="0.065625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5048544" sideWeight="0.934375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3964059" sideWeight="0.4984375" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/pennies/changecalc.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/depechedad/dad_quotes/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="16" column="95" lean-forward="false" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthcareai/utmb/Length3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthcareai/Lengthofstay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthcareai/utmb/new_utmb_los.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2975">
+          <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthcareai/ukhs_los.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="116" column="32" lean-forward="false" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_stats/efficiency_GH.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_stats/nba_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-674">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/all_star_classifier - 2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="98" column="33" lean-forward="false" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/nba_healthcareai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/pandas_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/pandanba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/ggplotnba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/seaborndemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/all_star_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileextractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/player_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/march_madness/ncaa_team_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/march_madness/ncaa_pandas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/pandanba2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="47" column="51" lean-forward="false" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/march_madness/college_team_scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba_machine_learning/nba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/vanhalensentiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/vanscraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/FNTRCU3IXGFOHW8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthcareai/healthstats2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/march_madness/ncaa_player_stats.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/march_madness/ncaa_pandas_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthcareai/aitest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/marktest3.py" />
+    <entry file="file://$PROJECT_DIR$/alltweets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/marktest2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/marktest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="64" column="88" lean-forward="true" selection-start-line="64" selection-start-column="88" selection-end-line="64" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/vanmarkovtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twittertest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/textgenrnn/textgenrnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1972">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/markov_language_model-master/extract_probs.py" />
+    <entry file="file://$PROJECT_DIR$/markov/newmarkov.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="93" lean-forward="false" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music-generation-master/convert_directory.py" />
+    <entry file="file://$PROJECT_DIR$/GRUV-master/data_utils/parse_files.py" />
+    <entry file="file://$PROJECT_DIR$/GRUV-master/convert_directory.py" />
+    <entry file="file://$PROJECT_DIR$/markov/generate_sequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/depechemarkov.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/extract_probs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="80" column="17" lean-forward="true" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/texttospeech.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/crazychain3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/crazychain2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/crazychain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markov/mottos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tweet-generator-master/tweet_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openai/lander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="130" column="15" lean-forward="true" selection-start-line="130" selection-start-column="15" selection-end-line="130" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

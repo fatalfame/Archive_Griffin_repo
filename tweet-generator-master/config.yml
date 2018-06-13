@@ -1,0 +1,23 @@
+consumer_key: 6bOj60mh5DCuTWwTzcf2FEwOY
+consumer_secret: i5GeQekQpveNEu8UyfqIeYQ8gxvcyW4y1BHD4d300sKRCtYbSD
+access_key: 42350266-RkpUEVXwPsSswJjCS5aApGY8Ma3VXF8i82tG18adA
+access_secret: uGaFjImvoqmWqMpQsxGjFC1QCA3O1BI3cCBiKEJn04Xd2
+
+twitter_users:
+  - realDonaldTrump
+  - vanhalenbot
+
+num_epochs: 5
+gen_epochs: 1
+batch_size: 128
+prop_keep: 1.0
+new_model: False
+
+# Only applicable if new_model: True
+model_config:
+  rnn_layers: 2
+  rnn_size: 128
+  rnn_bidirectional: False
+  max_length: 40
+  dim_embeddings: 100
+  word_level: False

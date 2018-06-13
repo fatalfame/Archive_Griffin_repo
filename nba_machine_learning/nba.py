@@ -7,27 +7,25 @@ import csv
 fieldnames = ['Player', 'Season', 'Age', 'Team', 'Points', 'Rebounds', 'Assists', 'Mins', 'FTA', 'Blocks',
               'Fouls', '3p%', 'FGA', '2p%', 'ft%', 'Steals', 'Turnovers', 'Games', 'Games Started', 'FGM', '3pa',
               '3pm', 'ftm', 'orb', 'drb', 'FG%', 'EFG%', 'TS%']
-writer = csv.DictWriter(open('..//nba_machine_learning/outputs/2017-18_roster.csv', 'wb'),
+writer = csv.DictWriter(open('..//nba_machine_learning/outputs/2017-18.csv', 'w'), lineterminator='\n',
                         fieldnames=fieldnames)
 writer.writeheader()
 
-
-SETTINGS = {'needs_driver': True, }
-
-driver = webdriver.Chrome()
+driver = webdriver.Firefox()
 START_URL = 'http://www.basketball-reference.com/play-index/psl_finder.cgi'
-PER_GAME = ".//*[@id='psl_finder']/div[2]/div[1]/div[1]/div[2]/div[1]/input"
-ACTIVE = ".//*[@id='psl_finder']/div[2]/div[1]/div[6]/div[1]/label/div[1]/input"
-FROM = ".//*[@id='year_min']/option[72]"
-TO = ".//*[@id='year_max']/option[72]"
-# STAR = ".//*[@id='psl_finder']/div[2]/div[1]/div[18]/div[1]/label/div[1]/input"
-OPTION = ".//*[@id='order_by']/option[2]"
-SORT = ".//*[@id='psl_finder']/div[2]/div[2]/div[6]/div/label/div[1]"
-SEARCH = ".//*[@id='psl_finder']/div[2]/div[2]/div[7]/input"
-RESULTS = ".//*[@id='stats']/tbody/tr"
+PER_GAME = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[1]/div[1]/div[2]/div[2]/label/div[1]/input"
+ACTIVE = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[1]/div[6]/div[2]/div[1]/label/div[1]/input"
+FROM = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[1]/div[10]/div[5]/button[4]"
+SC_ERA = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[1]/div[10]/div[5]/button[3]"
+TO = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[1]/div[10]/div[4]/div/select/option[72]"
+STAR = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[1]/div[17]/div[2]/div[1]/label/div[1]/input"
+NON_STAR = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[1]/div[17]/div[2]/div[2]/label/div[1]/input"
+OPTION = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[2]/div[5]/div[2]/div/label/div[1]/input"
+SORT = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[2]/div[4]/div[3]/select/option[2]"
+SEARCH = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div[2]/div[6]/div/input"
+RESULTS = "/html/body/div[2]/div[2]/div[1]/div[3]/div/div[2]/div/table/tbody/tr"
 # RESULTS = ".//*[@id='stats']/tbody/tr and not(contains(@class, 'thead'))"
-NEXT = './/*[@id="pi"]/div[4]/p/a[contains(text(),"Next page")]'
-
+NEXT = '/html/body/div[2]/div[2]/div[1]/div[3]/p/a[contains(text(),"Next page")]'
 
 def main(driver):
     driver.implicitly_wait(10)
@@ -35,8 +33,10 @@ def main(driver):
     driver.find_element_by_xpath(PER_GAME).click()
     driver.find_element_by_xpath(ACTIVE).click()
     driver.find_element_by_xpath(FROM).click()
+    # driver.find_element_by_xpath(SC_ERA).click()
     driver.find_element_by_xpath(TO).click()
     # driver.find_element_by_xpath(STAR).click()
+    # driver.find_element_by_xpath(NON_STAR).click()
     driver.find_element_by_xpath(OPTION).click()
     driver.find_element_by_xpath(SORT).click()
     driver.find_element_by_xpath(SEARCH).click()
@@ -47,7 +47,7 @@ def main(driver):
             try:
                 if row.xpath('.//td[1]/a/text()'):
                     player = value(row.xpath('.//td[1]/a/text()'))
-                    print player
+                    print(player)
             except IndexError:
                 continue
             season = value(row.xpath('.//td[5]/text()'))
@@ -83,7 +83,7 @@ def main(driver):
                                  'Fouls': pf, '3p%': three, 'FGA': fga, '2p%': twos, 'ft%': free, 'Steals': steals,
                                  'Turnovers': tov, 'Games': games, 'Games Started': gs, 'FGM': fgm, '3pa': tpa,
                                  '3pm': tpm, 'ftm': ftm, 'orb': orb, 'drb': drb, 'FG%': fgp, 'EFG%': efg, 'TS%': ts})
-        for n in xrange(0, 2):
+        for n in range(0, 2):
             time.sleep(3)
         driver.find_element_by_xpath(NEXT).click()
 

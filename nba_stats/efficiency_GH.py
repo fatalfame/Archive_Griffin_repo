@@ -2,7 +2,6 @@ import requests
 from lxml import html
 import csv
 import sys
-reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
@@ -17,7 +16,7 @@ writer.writeheader()
 def main():
     link = 'http://www.espn.com/nba/statistics/team/_/stat/team-comparison-per-game/sort/avgPoints/year/'
     link2 = 'http://www.espn.com/nba/statistics/team/_/stat/offense-per-game/year/'
-    for year in xrange(2015, 2018):
+    for year in range(2000, 2018):
         data = {}
         response = requests.get(link + str(year))
         details = html.fromstring(response.content)

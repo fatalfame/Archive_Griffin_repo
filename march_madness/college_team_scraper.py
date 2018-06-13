@@ -3,8 +3,9 @@ from lxml import html
 import csv
 
 
-fieldnames = ['School', 'Season', 'Conf', 'W', 'L', 'Percent', 'SOS', 'OFF', 'DEF', 'AP High', 'AP Final', 'NCAA']
-writer = csv.DictWriter(open('team_stats.csv', 'w'), fieldnames=fieldnames, lineterminator='\n')
+fieldnames = ['School', 'Season', 'Conf', 'W', 'L', 'Percent', 'SRS', 'SOS', 'OFF', 'DEF', 'AP High',
+              'AP Final', 'NCAA']
+writer = csv.DictWriter(open('team_stats2.csv', 'w'), fieldnames=fieldnames, lineterminator='\n')
 writer.writeheader()
 
 
@@ -18,7 +19,7 @@ def main():
         school = team.xpath(".//@href")[0]
         school_name = team.xpath('.//text()')[0]
         link_list.append(link + str(school))
-        print school
+        print(school_name)
         for item in link_list:
             d = requests.get(item)
             details = html.fromstring(d.content)
@@ -31,6 +32,7 @@ def main():
                     wins = value(row.xpath(".//*[@data-stat='wins']//text()"))
                     loss = value(row.xpath(".//*[@data-stat='losses']//text()"))
                     percent = value(row.xpath(".//*[@data-stat='win_loss_pct']//text()"))
+                    srs = value(row.xpath(".//*[@data-stat='srs']//text()"))
                     sos = value(row.xpath(".//*[@data-stat='sos']//text()"))
                     off = value(row.xpath(".//*[@data-stat='pts_per_g']//text()"))
                     defense = value(row.xpath(".//*[@data-stat='opp_pts_per_g']//text()"))
@@ -44,8 +46,8 @@ def main():
                                 'Won National Final', 'Lost National Semifinal'):
                         ncaa = int(1)
                     writer.writerow({'School': school_name, 'Season': season, 'Conf': conf, 'W': wins, 'L': loss,
-                                     'Percent': percent, 'SOS': sos, 'OFF': off, 'DEF': defense, 'AP High': ap_high,
-                                     'AP Final': ap_final, 'NCAA': ncaa})
+                                     'Percent': percent, 'SRS': srs, 'SOS': sos, 'OFF': off, 'DEF': defense,
+                                     'AP High': ap_high, 'AP Final': ap_final, 'NCAA': ncaa})
 
 
 def convert(val):

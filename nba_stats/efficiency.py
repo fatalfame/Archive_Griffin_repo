@@ -1,8 +1,6 @@
 import requests
 from lxml import html
 import csv
-import sys
-from tqdm import tqdm
 
 
 fieldnames = ['Season', 'Team', 'Points Per Game', 'Opponent Points Per Game', 'Point Differential', 'Own FG%',
@@ -39,10 +37,10 @@ playerfields = ['Season', 'Player', 'Team', 'Games Played', 'Minutes per Game', 
                 'Player Per Game 3 Pointers Percentage', 'Position']
 
 
-writer = csv.DictWriter(open('team_ratings.csv', 'wb'), fieldnames=fieldnames)
+writer = csv.DictWriter(open('team_ratings.csv', 'w'), fieldnames=fieldnames)
 writer.writeheader()
 
-player_writer = csv.DictWriter(open('player_ratings.csv', 'wb'), fieldnames=playerfields)
+player_writer = csv.DictWriter(open('player_ratings.csv', 'w'), fieldnames=playerfields)
 player_writer.writeheader()
 
 
@@ -55,7 +53,7 @@ link_4 = 'http://www.espn.com/nba/statistics/team/_/stat/miscellaneous-per-game/
 def main():
     #scrape team comparison stats per game
     data = {}
-    for year in tqdm(range(2001, 2018)):
+    for year in range(2001, 2018):
         year = str(year)
         r = requests.get(link_1 + year)
         details = html.fromstring(r.content)
@@ -151,7 +149,7 @@ def main():
 
     #scrape player stats
     data_two = {}
-    for year in tqdm(range(2001, 2018)):
+    for year in range(2001, 2018):
         r = requests.get('http://www.basketball-reference.com/leagues/NBA_' + str(year) + '_per_game.html')
         details = html.fromstring(r.content)
         stats = details.xpath(".//*[@id='per_game_stats']/tbody/tr")

@@ -1,16 +1,30 @@
-from ggplot import *
+import ggplot
 import pandas
+import seaborn as sns; sns.set(color_codes=True)
+import numpy as np
 
 
 # More rows plz!
-players = pandas.read_csv('..//NBA_machine_learning/2016-17_players.csv')
-young = players[players["Age"] > 30]
+players = pandas.read_csv('..//NBA_machine_learning/outputs/all_star_probability.csv')
+# young = players[players["Age"] > 30]
+# players = players[players["Seas"] >= 2016]
 # What counties are all the people under 50 from?
-a = ggplot(players, aes(x="Age", y="PS/G", label="Player")) + geom_point() + geom_text()
-# print a
-d = ggplot(players, aes(x="Age", y="PS/G", color="AST")) + geom_point()
-print d
+# a = ggplot(players, aes(x="X", y="Prob", color="Y")) + geom_point()
+# print(a)
+# d = ggplot(players, aes(x="Points", y="Salary")) + geom_point() + geom_abline(intercept=20)
+# print(d)
 # print b
+players = players.dropna(axis=0)
+ax = sns.regplot(x="Points", y="All Star", data=players, logistic=True)
+ax.set(xlabel="Points per game", ylabel="Probability of prediction")
+ax.set_title('NBA All Star Classifications')
+sns.plt.show()
+# ag = sns.regplot(x="Season", y="Salary Cap", data=players, ci=None)
+# ag.set_title('NBA Salary Cap On the Rise')
+# sns.plt.ylim(0,)
+# sns.plt.show()
+# ag = sns.lmplot(x="Points", y="Assists", hue="All Star", data=players, palette="Set1", ci=70)
+# sns.plt.show()
 # Let's add some color!
 # c = ggplot(young, aes(x="OperatingRoomMinuteQTY", y="PatientAge", color="GenderDSC")) + geom_point()
 # print c
